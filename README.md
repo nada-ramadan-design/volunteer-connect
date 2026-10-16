@@ -7,7 +7,7 @@ Volunteer Connect is a responsive and interactive website designed to help peopl
 
 ## 🌟 Live Demo
 
-🔗 **[Visit Volunteer Connect](PASTE-YOUR-LIVE-WEBSITE-LINK-HERE)**
+🔗 **[Visit Volunteer Connect]( https://nada-ramadan-design.github.io/volunteer-connect/**
 
 ## ✨ Features
 
