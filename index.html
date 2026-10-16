@@ -1,0 +1,408 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#123c32">
+
+    <title>Volunteer Connect | Make a Difference</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+
+    <header class="site-header">
+        <a href="#home" class="logo">
+            <span class="logo-icon">V</span>
+            Volunteer<span class="logo-accent">Connect</span>
+        </a>
+
+        <nav class="navigation" aria-label="Main navigation">
+            <a href="#home">Home</a>
+            <a href="#opportunities">Opportunities</a>
+            <a href="#about">About</a>
+        </nav>
+
+        <a href="#opportunities" class="button button-small">Find Your Cause ↗</a>
+    </header>
+
+    <main>
+        <section class="hero" id="home">
+            <div class="hero-content">
+                <span class="eyebrow">
+                    <span class="status-dot"></span>
+                    GOOD THINGS START WITH YOU
+                </span>
+
+                <h1>
+                    Make your time
+                    <span class="highlight">mean something.</span>
+                </h1>
+
+                <p class="hero-description">
+                    Discover meaningful volunteer opportunities,
+                    share your skills, and help create a better
+                    world — one small action at a time.
+                </p>
+
+                <div class="hero-actions">
+                    <a href="#opportunities" class="button">
+                        Explore Opportunities <span>↗</span>
+                    </a>
+                    <a href="#about" class="text-link">Our mission →</a>
+                </div>
+
+                <div class="hero-note">
+                    <span class="note-icon">♡</span>
+                    <p>Small acts. Real people. Lasting change.</p>
+                </div>
+            </div>
+
+            <div class="hero-visual" aria-label="Volunteer inspiration">
+                <div class="visual-orbit orbit-one"></div>
+                <div class="visual-orbit orbit-two"></div>
+
+                <div class="visual-card">
+                    <span class="visual-sparkle sparkle-one">✳</span>
+                    <span class="visual-sparkle sparkle-two">✦</span>
+
+                    <div class="visual-heart">♡</div>
+
+                    <p class="visual-label">YOUR KINDNESS MATTERS</p>
+                    <h2>Be someone's<br>reason to smile.</h2>
+                    <div class="visual-line"></div>
+                    <p class="visual-caption">The world gets better when we help each other.</p>
+                </div>
+
+                <div class="floating-tag tag-top">✳ Be the change</div>
+                <div class="floating-tag tag-bottom">Made for good ♡</div>
+            </div>
+        </section>
+
+        <section class="mission-strip">
+            <div>
+                <span class="strip-icon">♡</span>
+                <p><strong>Give your time</strong><br>Make it meaningful</p>
+            </div>
+            <div>
+                <span class="strip-icon">✳</span>
+                <p><strong>Share your skills</strong><br>Help others grow</p>
+            </div>
+            <div>
+                <span class="strip-icon">↗</span>
+                <p><strong>Create change</strong><br>Start right here</p>
+            </div>
+        </section>
+
+        <section class="opportunities section" id="opportunities">
+            <div class="section-heading">
+                <div>
+                    <p class="eyebrow">YOUR NEXT CHAPTER STARTS HERE</p>
+                    <h2>Find your kind<br>of <span class="highlight">good.</span></h2>
+                </div>
+
+                <p class="section-description">
+                    Whether you love nature, enjoy teaching, or want
+                    to support your community, there's a place for you.
+                </p>
+            </div>
+
+            <div class="search-panel">
+                <div class="search-box">
+                    <span aria-hidden="true">⌕</span>
+                    <input
+                        type="search"
+                        id="searchInput"
+                        placeholder="Search opportunities..."
+                        aria-label="Search opportunities"
+                    >
+                </div>
+
+                <div class="filter-box">
+                    <label for="categoryFilter">Category</label>
+                    <select id="categoryFilter">
+                        <option value="all">All categories</option>
+                        <option value="environment">Environment</option>
+                        <option value="education">Education</option>
+                        <option value="community">Community</option>
+                        <option value="health">Health</option>
+                        <option value="animals">Animal Welfare</option>
+                        <option value="technology">Technology</option>
+                    </select>
+                </div>
+            </div>
+
+            <p class="results-count" id="resultsCount" aria-live="polite">
+                Showing 6 opportunities
+            </p>
+
+            <div class="cards" id="opportunityCards">
+
+                <article class="card" data-category="environment">
+                    <div class="card-art art-green">
+                        <span class="card-emoji">🌱</span>
+                        <span class="category-tag">ENVIRONMENT</span>
+                    </div>
+                    <div class="card-content">
+                        <p class="card-meta">Nature · Outdoor</p>
+                        <h3>Greener Tomorrow</h3>
+                        <p class="card-description">
+                            Join local clean-up activities and help make
+                            shared spaces greener and healthier.
+                        </p>
+                        <div class="card-footer">
+                            <span>◷ Flexible schedule</span>
+                            <button class="details-button" type="button"
+                                data-title="Greener Tomorrow"
+                                data-category="Environment"
+                                data-description="Join community clean-up days, help care for green spaces, and encourage environmentally friendly habits. Bring your enthusiasm and be ready to work with a team."
+                                data-time="Flexible schedule"
+                                data-location="Local community spaces">
+                                Explore <span>↗</span>
+                            </button>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="card" data-category="education">
+                    <div class="card-art art-yellow">
+                        <span class="card-emoji">📚</span>
+                        <span class="category-tag">EDUCATION</span>
+                    </div>
+                    <div class="card-content">
+                        <p class="card-meta">Learning · Mentoring</p>
+                        <h3>Bright Minds</h3>
+                        <p class="card-description">
+                            Help younger students practise school subjects
+                            and discover the joy of learning.
+                        </p>
+                        <div class="card-footer">
+                            <span>◷ Flexible schedule</span>
+                            <button class="details-button" type="button"
+                                data-title="Bright Minds"
+                                data-category="Education"
+                                data-description="Support younger learners with reading, basic school subjects, or study activities. Help create a welcoming space where students feel encouraged to learn."
+                                data-time="Flexible schedule"
+                                data-location="Community learning spaces">
+                                Explore <span>↗</span>
+                            </button>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="card" data-category="community">
+                    <div class="card-art art-pink">
+                        <span class="card-emoji">🤝</span>
+                        <span class="category-tag">COMMUNITY</span>
+                    </div>
+                    <div class="card-content">
+                        <p class="card-meta">People · Teamwork</p>
+                        <h3>Community Care</h3>
+                        <p class="card-description">
+                            Take part in community activities that bring
+                            people together and offer practical support.
+                        </p>
+                        <div class="card-footer">
+                            <span>◷ Event-based</span>
+                            <button class="details-button" type="button"
+                                data-title="Community Care"
+                                data-category="Community"
+                                data-description="Help organise community events, prepare activity materials, and support local initiatives that bring neighbours together."
+                                data-time="Event-based"
+                                data-location="Community centres">
+                                Explore <span>↗</span>
+                            </button>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="card" data-category="health">
+                    <div class="card-art art-blue">
+                        <span class="card-emoji">💙</span>
+                        <span class="category-tag">HEALTH</span>
+                    </div>
+                    <div class="card-content">
+                        <p class="card-meta">Wellbeing · Support</p>
+                        <h3>Care & Kindness</h3>
+                        <p class="card-description">
+                            Support approved community wellbeing events
+                            with welcoming and helpful activities.
+                        </p>
+                        <div class="card-footer">
+                            <span>◷ Event-based</span>
+                            <button class="details-button" type="button"
+                                data-title="Care &amp; Kindness"
+                                data-category="Health"
+                                data-description="Assist with non-medical tasks at approved community wellbeing events, such as welcoming visitors, organising materials, and helping event teams."
+                                data-time="Event-based"
+                                data-location="Approved community events">
+                                Explore <span>↗</span>
+                            </button>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="card" data-category="animals">
+                    <div class="card-art art-orange">
+                        <span class="card-emoji">🐾</span>
+                        <span class="category-tag">ANIMAL WELFARE</span>
+                    </div>
+                    <div class="card-content">
+                        <p class="card-meta">Animals · Compassion</p>
+                        <h3>Little Paws</h3>
+                        <p class="card-description">
+                            Help animal welfare teams with approved
+                            care activities and awareness campaigns.
+                        </p>
+                        <div class="card-footer">
+                            <span>◷ Flexible schedule</span>
+                            <button class="details-button" type="button"
+                                data-title="Little Paws"
+                                data-category="Animal Welfare"
+                                data-description="Support an established animal welfare group with approved tasks, awareness materials, and organising supplies. Follow the organisation's safety and animal-care guidance."
+                                data-time="Flexible schedule"
+                                data-location="Participating animal welfare groups">
+                                Explore <span>↗</span>
+                            </button>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="card" data-category="technology">
+                    <div class="card-art art-purple">
+                        <span class="card-emoji">💻</span>
+                        <span class="category-tag">TECHNOLOGY</span>
+                    </div>
+                    <div class="card-content">
+                        <p class="card-meta">Digital skills · Creativity</p>
+                        <h3>Digital for Good</h3>
+                        <p class="card-description">
+                            Use your digital skills to support community
+                            projects, learning resources, and awareness.
+                        </p>
+                        <div class="card-footer">
+                            <span>◷ Project-based</span>
+                            <button class="details-button" type="button"
+                                data-title="Digital for Good"
+                                data-category="Technology"
+                                data-description="Contribute beginner-friendly digital skills to community projects, such as creating educational pages, designing awareness materials, or helping organise digital resources with a project supervisor."
+                                data-time="Project-based"
+                                data-location="Community or online projects">
+                                Explore <span>↗</span>
+                            </button>
+                        </div>
+                    </div>
+                </article>
+
+            </div>
+
+            <div class="no-results" id="noResults" hidden>
+                <span>🔎</span>
+                <h3>No opportunities found</h3>
+                <p>Try another keyword or choose a different category.</p>
+                <button class="button" id="resetFilters" type="button">
+                    Clear filters
+                </button>
+            </div>
+        </section>
+
+        <section class="about section" id="about">
+            <div class="about-symbol">✳</div>
+            <p class="eyebrow">WHY VOLUNTEER CONNECT?</p>
+            <h2>A little help can<br>go a <span class="highlight">long way.</span></h2>
+            <p class="about-description">
+                We believe everyone has something valuable to give.
+                Volunteer Connect helps people discover ways to share
+                their time, develop their skills, and support causes
+                that matter to them.
+            </p>
+            <a href="#opportunities" class="button">Find your opportunity ↗</a>
+        </section>
+
+        <section class="closing-banner">
+            <div>
+                <p class="eyebrow">YOUR NEXT STEP MATTERS</p>
+                <h2>Be part of something good.</h2>
+            </div>
+            <a href="#opportunities" class="button button-light">
+                Start exploring ↗
+            </a>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <a href="#home" class="logo">
+            <span class="logo-icon">V</span>
+            Volunteer<span class="logo-accent">Connect</span>
+        </a>
+        <p>Made with purpose. Built for a better tomorrow.</p>
+        <a href="#home" class="back-to-top">Back to top ↑</a>
+        <p class="copyright">© 2026 Volunteer Connect · Student project</p>
+    </footer>
+
+    <!-- Opportunity details dialog -->
+    <dialog id="detailsDialog" class="dialog">
+        <button class="dialog-close" id="closeDetails"
+            type="button" aria-label="Close details">×</button>
+
+        <p class="eyebrow">DISCOVER THE OPPORTUNITY</p>
+        <span class="dialog-category" id="detailsCategory">Category</span>
+        <h2 id="detailsTitle">Opportunity title</h2>
+        <p id="detailsDescription" class="dialog-description"></p>
+
+        <div class="dialog-info">
+            <p><strong>Schedule</strong><span id="detailsTime"></span></p>
+            <p><strong>Location</strong><span id="detailsLocation"></span></p>
+        </div>
+
+        <button class="button dialog-action" id="applyButton" type="button">
+            Apply for this opportunity ↗
+        </button>
+        <p class="demo-note">Demo project · No real organisation is connected.</p>
+    </dialog>
+
+    <!-- Demo application dialog -->
+    <dialog id="applicationDialog" class="dialog">
+        <button class="dialog-close" id="closeApplication"
+            type="button" aria-label="Close application">×</button>
+
+        <p class="eyebrow">TAKE THE FIRST STEP</p>
+        <h2>Let's make a difference.</h2>
+        <p id="selectedOpportunity" class="selected-opportunity"></p>
+
+        <form id="applicationForm">
+            <label for="fullName">Full name</label>
+            <input id="fullName" name="fullName" type="text"
+                placeholder="Enter your name" required maxlength="80">
+
+            <label for="email">Email address</label>
+            <input id="email" name="email" type="email"
+                placeholder="you@example.com" required maxlength="120">
+
+            <label for="motivation">Why would you like to volunteer?</label>
+            <textarea id="motivation" name="motivation"
+                placeholder="Tell us what inspires you..."
+                rows="4" minlength="10" maxlength="600" required></textarea>
+
+            <button class="button dialog-action" type="submit">
+                Submit demo application ↗
+            </button>
+
+            <p id="formMessage" class="form-message" role="status"
+                aria-live="polite"></p>
+        </form>
+
+        <p class="demo-note">
+            This is a demonstration only. Your application is not sent or saved.
+        </p>
+    </dialog>
+
+</body>
+</html>
